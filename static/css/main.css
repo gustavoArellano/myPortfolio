@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+
+#header {
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    opacity: 0.80
+}
+
+#header h2 {
+    cursor: default;
+    color: white;
+}
+
+#links {
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+#links ul li{
+    display: inline-block;
+}
+
+#links ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    /* border bottom white happens after the hover effect, and does it for 150milseconds */
+    border-bottom: 0px solid white; 
+    transition: border 150ms, padding 150ms;
+}
+
+#links ul li a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+
+#landing {
+    /* background section will darken the image */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg"); */
+    background: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* vh is vertical height which will cover 100% of screen, and sticks to it when scrolling. */
+    height: 100vh;
+    padding: 100px 20px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 85%;
+    padding: 50px 15px;
+    /* background-color: rgb(75, 75, 75); */
+    /* border-radius: 4px; */
+    /* box-shadow: 4px 4px 8px black; */
+}
+
+.aboutMe img {
+    margin-right: 50px;
+    width: 220px;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 8px black;
+    filter: brightness(60%);
+}
+
+.info {
+    width: 60%;
+    padding: 10px;
+    color: white;
+}
+
+.info p {
+    padding: 10px 0;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.socialLinks a {
+    color: white;
+    transition: color 200ms;
+    filter: brightness(60%);
+}
+
+.socialLinks a:hover {
+    color: black;
+}
+
+.socialLinks a:active {
+    color: white;
+}
+
+/* @media (max-width: 480) {
+    .intro {
+        margin-top: 100px;
+    }
+
+    .row {
+        display: block;
+        height: 100000px;
+        text-align: center;
+    }
+} */
+
+
