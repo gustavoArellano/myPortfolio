@@ -47,7 +47,7 @@
     background: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 100vh;
     padding: 100px 20px;
 }
@@ -111,9 +111,11 @@
 }
 
 .project {
+    overflow: auto;
     opacity: 0;
     display: inline-block;
-    margin: 30px;;
+    vertical-align: top;
+    margin: 30px;
     border: 1px solid rgb(97, 97, 97);
     background-color: rgb(24, 24, 24);
     width: 20%;
@@ -123,6 +125,14 @@
 
 
 .projectInfo {
+    overflow: auto;
+    padding: 10px;
+}
+
+.projectInfo h6 {
+    color: white;
+    border: 2px solid white;
+    margin: 0px auto;
     padding: 10px;
 }
 
@@ -300,10 +310,7 @@
         margin: 20px;
         
     }
-    
-    .tablet {
-        display: none;
-    }
+
 }
 
 @media only screen and (min-width: 481px) {
@@ -365,11 +372,13 @@
         flex-wrap: wrap;
         margin: 20px; 
         width: 40%;
+        height: 500px;
     }
     
     .projectInfo {
         flex-wrap: wrap;
-        padding: 10px;
+        padding: 15px;
+        
     }
 
     #contactMe {
@@ -429,6 +438,23 @@
 
     .fullScreen {
         color: white;
+    }
+
+    .social {
+        width: 50%;
+    }
+
+    .project {
+        vertical-align: top;
+        margin: 50px;
+        margin-top: 5px;
+        width: 30%;
+        height: 600px;
+    }
+
+    .projectInfo {
+        padding: 20px;
+        overflow: auto;
     }
 }
 
